@@ -1,4 +1,8 @@
-"Welcome, <%=@user.name%>!"
+<%# * The views/users sub-directory contains one file, the template for the user's homepage. This page is rendered by the get '/users/home' route in the controller.  %>
 
-<a href="/sessions/logout">Log Out</a>
+
+"Welcome, <%= @user.name %>!"
+
+<%# this link redirects to the log out %>
+<a href="/sessions/logout">Log Out</a> 
 
